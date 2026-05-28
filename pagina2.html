@@ -2,15 +2,21 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tipos de Hidroponía</title>
 
   <style>
+    html, body {
+      height: 100%;
+    }
+
     body {
       margin: 0;
       font-family: sans-serif;
       background: url('hidroponia.jpg') no-repeat center center/cover;
       color: white;
-      padding: 30px;
+      display: flex;
+      flex-direction: column;
     }
 
     .contenedor {
@@ -18,6 +24,8 @@
       padding: 25px;
       border-radius: 20px;
       backdrop-filter: blur(10px);
+      margin: 20px;
+      flex: 1;
     }
 
     h1 {
@@ -26,31 +34,44 @@
 
     .tipo {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: space-between;
       margin-bottom: 25px;
+      text-align: center;
     }
 
     .texto {
-      width: 500px;
+      max-width: 500px;
     }
 
     .imagen img {
-      width: 200px;
+      width: 90%;
+      max-width: 250px;
       height: auto;
       border-radius: 15px;
       box-shadow: 0 0 10px black;
+      margin-top: 10px;
     }
 
-    a {
-      color: #00ffcc;
+    .boton {
+      display: inline-block;
+      color: white;
+      background: #00ffcc;
+      padding: 10px 20px;
+      border-radius: 20px;
       text-decoration: none;
     }
-  footer {
+
+    footer {
       text-align: center;
-      padding: 15px;
-      font-size: 0.9rem;
-      opacity: 0.6;
+      font-size: 0.8rem;
+      opacity: 0.5;
+      padding: 10px;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -105,17 +126,18 @@
     </div>
   </div>
 
-  <br>
+  <div style="text-align:center; margin-top:30px;">
+    <a href="index.html" class="boton">
+      ⬅ Volver al inicio
+    </a>
+  </div>
 
-  <div style="text-align:center; margin-top:20px;">
-  <a href="Hydromind_.html" 
-     style="color:white; background:#00ffcc; padding:10px 20px; border-radius:20px; text-decoration:none;">
-    ⬅ Volver al inicio
-  </a>
 </div>
 
 <footer>
-  𝚠𝚠𝚠.𝚑𝚢𝚍𝚛𝚘𝚖𝚒𝚗𝚍.𝚌𝚘𝚖
+  <a href="https://dulcesita777.github.io/Hydromind/">
+    https://dulcesita777.github.io/Hydromind/
+  </a>
 </footer>
 
 </body>
