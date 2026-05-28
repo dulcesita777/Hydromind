@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hidroponía</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: url('hidroponia.jpg') no-repeat center center/cover;
+      color: white;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.4);
+      margin: 20px auto;
+      border-radius: 20px;
+      width: fit-content;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    .logo {
+      width: 220px;
+      height: auto;
+      object-fit: contain;
+      margin-top: 15px;
+    }
+
+    .titulo {
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-shadow: 0 0 15px rgba(0,255,200,0.6);
+    }
+
+    .subtitulo {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      opacity: 0.85;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .container {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      overflow-x: auto;
+      gap: 20px;
+      padding: 30px;
+      align-items: center;
+    }
+
+    .card {
+      min-width: 220px;
+      height: 180px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 25px;
+      padding: 25px;
+      text-align: center;
+      backdrop-filter: blur(12px);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      text-decoration: none;
+      color: white;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      width: 330px;
+      height: 330px;
+      background: radial-gradient(circle, rgba(0,255,200,0.2), transparent);
+      top: -120px;
+      left: -120px;
+      opacity: 0;
+      transition: 0.4s;
+    }
+
+    .card:hover::before {
+      opacity: 1;
+    }
+
+    .card:hover {
+      transform: translateY(-8px) scale(1.03);
+      background: rgba(255,255,255,0.15);
+    }
+
+    .icon {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1 class="titulo">🍃𝓗𝔂𝓭𝓻𝓸𝓶𝓲𝓷𝓭🍃</h1>
+  <p class="subtitulo">¿𝐶𝑢𝑙𝑡𝑖𝑣𝑎𝑟 𝑒𝑛 𝑎𝑔𝑢𝑎? ¡𝐸𝑥𝑝𝑙𝑜𝑟𝑎 𝑒𝑙 𝑓𝑢𝑡𝑢𝑟𝑜 𝑑𝑒 𝑙𝑜𝑠 𝑐𝑢𝑙𝑡𝑖𝑣𝑜𝑠, 𝑠𝑖𝑛 𝑢𝑡𝑖𝑙𝑖𝑧𝑎𝑟 𝑡𝑖𝑒𝑟𝑟𝑎!</p>
+  <img src="logoepo6.png" class="logo">
+</header>
+
+<div class="container">
+
+  <a href="pagina1.html" class="card">
+    <div class="icon">📜</div>
+    ʜɪsᴛᴏʀɪᴀ
+  </a>
+
+  <a href="pagina2.html" class="card">
+    <div class="icon">💧</div>
+    ᴛɪᴘᴏs
+  </a>
+
+  <a href="pagina3.html" class="card">
+    <div class="icon">🪄</div>
+    ᴠᴇɴᴛᴀᴊᴀs
+  </a>
+
+  <a href="pagina4.html" class="card">
+    <div class="icon">⚠️</div>
+    ᴅᴇsᴠᴇɴᴛᴀᴊᴀs
+  </a>
+
+  <a href="pagina5.html" class="card">
+    <div class="icon">🧰</div>
+    ᴍᴀᴛᴇʀɪᴀʟᴇs
+  </a>
+
+  <a href="pagina6.html" class="card">
+    <div class="icon">🌾</div>
+    ɴᴜᴛʀɪᴇɴᴛᴇs
+  </a>
+
+  <a href="pagina7.html" class="card">
+    <div class="icon">🥬</div>
+    ᴄᴜʟᴛɪᴠᴏs
+  </a>
+
+  <a href="pagina8.html" class="card">
+    <div class="icon">⚙️</div>
+    sɪsᴛᴇᴍᴀ ɴғᴛ
+  </a>
+
+  <a href="pagina9.html" class="card">
+    <div class="icon">💡</div>
+    ɪᴍᴘᴏʀᴛᴀɴᴄɪᴀ
+  </a>
+
+  <a href="pagina10.html" class="card">
+    <div class="icon">🔎</div>
+    ᴅᴀᴛᴏs ᴄᴜʀɪᴏsᴏs
+  </a>
+
+</div>
+
+<footer>
+  𝚠𝚠𝚠.𝚑𝚢𝚍𝚛𝚘𝚖𝚒𝚗𝚍.𝚌𝚘𝚖
+</footer>
+
+</body>
+</html>
